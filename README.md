@@ -1,3 +1,5 @@
+[toc]
+
 # react-useful-package-combination
 
 Combine some useful dependencies to produce a unified DLL file for deployment to support the react project
@@ -13,7 +15,7 @@ Combine some useful dependencies to produce a unified DLL file for deployment to
 
 ## 项目构建的流程
 
-首先，先介绍本项目的构建创立过程，如果你是一个有经验的开发者，或者你仅仅想使用此项目构建后的结果，你可以忽略此部分直接看使用部分。
+首先，先介绍本项目的构建创立过程，如果你是一个有经验的开发者，或者你仅仅想使用此项目构建后的结果，你可以忽略此部分直接 [查看使用部分](##使用)。
 
 1. 开始，生成 package.json
 
