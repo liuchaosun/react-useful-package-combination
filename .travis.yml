@@ -1,0 +1,17 @@
+# 持续集成配置
+language: node_js
+
+node_js: stable
+
+sudo: false
+
+cache:
+  apt: true
+  directions:
+  - node_modules
+
+install:
+  - npm install -D
+
+scrpits:
+  - npm test
