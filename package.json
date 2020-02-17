@@ -1,0 +1,36 @@
+{
+  "name": "react-useful-package-combination",
+  "version": "1.0.0",
+  "description": "Combine some useful dependencies to produce a unified DLL file for deployment to support the react project",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build && mocha",
+    "build": "webpack --config webpack.config.dll.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuchaosun/react-useful-package-combination.git"
+  },
+  "keywords": [],
+  "author": "liuchao sun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liuchaosun/react-useful-package-combination/issues"
+  },
+  "homepage": "https://github.com/liuchaosun/react-useful-package-combination#readme",
+  "dependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "glob-all": "^3.1.0",
+    "mocha": "^7.0.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.1.3",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  }
+}
