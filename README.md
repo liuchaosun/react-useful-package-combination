@@ -1,17 +1,13 @@
-[toc]
-
 # react-useful-package-combination
 
-Combine some useful dependencies to produce a unified DLL file for deployment to support the react project
-
-平时在使用 react 框架开发项目时，总是会提到一个“全家桶”的概念，意思是使用这相关联的一整套技术就可以构建一个完整的 react 生态，那么“全家桶”里，到底包含哪些呢？本项目就是基于此问题思考，对零散的“全家桶”进行整合，通过构建工具生成一个经过编译压缩的 dll 文件在生产环境部署。
+平时在使用 React 框架开发项目时，总是会提到一个“全家桶”的概念，意思是使用这相关联的一整套技术就可以构建一个完整的 React 生态，那么“全家桶”里，到底包含哪些呢？本项目就是基于此问题思考，对零散的“全家桶”进行整合，通过构建工具生成一个经过编译压缩的 dll 文件在生产环境部署。
 
 理解此项目你需要具有以下的基本知识：
 
 1. nodejs 和 npm 使用
 1. webpack、webpack.DllPlugin 和 webpack.DllReferencePlugin 如何使用
 1. html-webpack-plugin 是什么？如何使用？
-1. react 全家桶
+1. React 全家桶
 
 ## 项目构建的流程
 
@@ -33,7 +29,7 @@ Combine some useful dependencies to produce a unified DLL file for deployment to
 
    本项目采用的构建工具是 webpack,目前此构建工具较为流行且本项目就是基于此工具完成功能目标
 
-1. 安装 react "全家桶"
+1. 安装 React "全家桶"
 
    ```bash
    npm install -S react react-dom react-router react-router-dom redux react-redux redux-thunk redux-logger
@@ -41,9 +37,9 @@ Combine some useful dependencies to produce a unified DLL file for deployment to
 
    - react 是 react 框架的核心依赖
    - react-dom 主要用来解析虚拟 dom 渲染真实 dom
-   - react-router react-router-dom 用来管理 react 项目的路由跳转功能，目前仅仅使用 react-router-dom 也可以完成 web 项目的路由设置
-   - redux react-redux 围绕着 react 提供全局的状态管理（store），可以方便在任何组件中获取数据
-   - redux 提供与 store 的环境有关的 api, 如 Provider， connect。
+   - react-router、react-router-dom 用来管理 react 项目的路由跳转功能，目前仅仅使用 react-router-dom 也可以完成 web 项目的路由设置
+   - redux、 react-redux 围绕着 react 提供全局的状态管理（store），可以方便在任何组件中获取数据
+   - redux 提供与 store 环境有关的 api, 如 Provider， connect。
    - react-redux 提供操作和修改 store 相关的 api, 如 createStore（创建）,combineReducers（整合操作方法），applyMiddleware（集成中间件）
    - redux-thunk 用来支持模块化的 reducers 使用，基于开发人员的开发习惯，很多人喜欢将不同功能的 state 维护在不同的模块中，在使用 createStore 生成 store 时，需要 combineReducers 和 applyMiddleware 一起使用
    - redux-logger 用来打印 store 中的数据变化情况，一般只在开发环境使用
